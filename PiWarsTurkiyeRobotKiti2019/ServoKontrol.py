@@ -4,7 +4,7 @@ from threading import Thread
 
 class ServoKontrol:
     
-    def __init__(self, pin=35, GPIOSetup = GPIO.BOARD):
+    def __init__(self, pin, GPIOSetup = GPIO.BOARD):
         GPIO.setmode(GPIOSetup)
         
         GPIO.setup(pin, GPIO.OUT)
